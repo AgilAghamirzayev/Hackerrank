@@ -21,7 +21,6 @@ public class MiniMaxSum {
 
         System.out.printf("%d %d",minSum-MIN, maxSum-MAX);
 
-
     }
 
     private static final Scanner scanner = new Scanner(System.in);
