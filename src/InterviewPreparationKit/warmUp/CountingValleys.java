@@ -6,25 +6,14 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class CountingValleys {
-    static int countingValleys(int n, String s) {
-
+    private static int countingValleys(int n, String s) {
         int count = 0;
         int sum = 0;
 
-        for (int i = 0; i < n; i++) {
-            
-            if (s.charAt(i) == 'U'){
-                count++;
-                if (count >= 1){
-                    i++;
-                    if (s.charAt(i) == 'D') count--;
-                    else count++;
-                    continue;
-                }
-            }
-
-            if (count==0) sum++;
-
+        for (char c: s.toCharArray()) {
+            if (c == 'U') ++count;
+            if (c == 'D') --count;
+            if (count == 0 && c == 'U') ++sum;
         }
 
         return sum;
