@@ -1,4 +1,4 @@
-package javam.stringm.introduction;
+package java_.introduction;
 
 import java.util.Scanner;
 import java.util.stream.IntStream;

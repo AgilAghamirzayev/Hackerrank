@@ -1,4 +1,4 @@
-package javam.stringm.introduction;
+package java_.introduction;
 
 public class WelcomeToJava {
     public static void main(String[] args) {
