@@ -4,29 +4,29 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 public class SparseArrays {
     static int[] matchingStrings(String[] strings, String[] queries) {
 
         int[] arr = new int[queries.length];
-        int[] count = new int[1];
+        int count = 0;
+//        int[] count = new int[1];
 
-        IntStream.range(0,queries.length).forEach(i->{
-                IntStream.range(0,strings.length).forEach(j->{
-                    if (queries[i].equals(strings[j])) count[0]++;
-                });
-                arr[i] = count[0];
-                count[0]=0;
-        });
-//
-//        for (int i = 0; i < queries.length; i++) {
-//            for (int j = 0; j < strings.length; j++) {
-//                if (queries[i].equals(strings[j]))  count++;
-//            }
-//            arr[i] = count;
-//            count=0;
-//        }
+//        IntStream.range(0,queries.length).forEach(i->{
+//                IntStream.range(0,strings.length).forEach(j->{
+//                    if (queries[i].equals(strings[j])) count[0]++;
+//                });
+//                arr[i] = count[0];
+//                count[0]=0;
+//        });
+
+        for (int i = 0; i < queries.length; i++) {
+            for (int j = 0; j < strings.length; j++) {
+                if (queries[i].equals(strings[j]))  count++;
+            }
+            arr[i] = count;
+            count=0;
+        }
 
         return arr;
     }
