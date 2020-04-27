@@ -2,6 +2,10 @@ package PashaBank;
 
 public class FizzBuzz {
 
+    String a;
+
+
+
     public static void main(String[] args) {
         fizzBuzz(15);
     }

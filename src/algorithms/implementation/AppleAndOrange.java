@@ -6,8 +6,20 @@ import java.util.Scanner;
 public class AppleAndOrange {
     static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
 
-        System.out.println(Arrays.stream(apples).map(z->z+a).filter(z->z>=s && z<=t).count());
-        System.out.println(Arrays.stream(oranges).map(z->z+b).filter(z->z>=s && z<=t).count());
+        long numberOfApples = Arrays.stream(apples)
+                .map(z -> z + a)
+                .filter(z -> z >= s)
+                .filter(z -> z <= t)
+                .count();
+
+        long numberOfOranges = Arrays.stream(oranges)
+                .map(z -> z + b)
+                .filter(z -> z >= s)
+                .filter(z -> z <= t)
+                .count();
+
+        System.out.println(numberOfApples);
+        System.out.println(numberOfOranges);
 
     }
 
