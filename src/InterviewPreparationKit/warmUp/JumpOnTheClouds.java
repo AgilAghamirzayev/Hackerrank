@@ -7,25 +7,24 @@ import java.util.Scanner;
 
 public class JumpOnTheClouds {
 
-    static int jumpingOnClouds(int[] c){
+    static int jumpingOnClouds(int[] c) {
 
-        int a=0;
+        int a = 0;
 
-        for (int i = 0; i < c.length-1; i++) {
-            int d = i+1;
-            if (c[i] == 0 && c[d] == 0) {
+        for (int i = 0; i < c.length - 1; i++) {
+            int next = i + 1;
+            if (c[i] == 0 && c[next] == 0) {
                 a++;
                 i++;
-            } else if (c[i] == 0 && c[d] == 1){
+            } else if (c[i] == 0 && c[next] == 1) {
                 a++;
                 i++;
-            } else if (c[i] == 1 && c[d] == 0){
+            } else if (c[i] == 1 && c[next] == 0) {
                 a++;
             }
         }
         return a;
     }
-
 
 
     private static final Scanner scanner = new Scanner(System.in);
