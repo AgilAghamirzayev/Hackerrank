@@ -5,10 +5,10 @@ import java.util.function.BiFunction;
 public class SherlockAndSquares {
 
     static BiFunction<Integer, Integer, Integer> function =
-            (a, b) -> (int)Math.sqrt(b)-(int)Math.sqrt(a);
+            (a, b) -> (int)Math.sqrt(b)-(int)Math.sqrt(a-1);
 
     static int squares(int a, int b) {
-        return function.apply(a-1,b);
+        return function.apply(a,b);
     }
 
     public static void main(String[] args) {

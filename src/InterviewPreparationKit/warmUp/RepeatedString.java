@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class RepeatedString {
 
+
     private static long repeatedString(String s, long n){
 
         long length = s.length();

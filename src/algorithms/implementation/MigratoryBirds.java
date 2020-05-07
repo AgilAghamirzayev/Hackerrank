@@ -23,5 +23,6 @@ public class MigratoryBirds {
 
     public static void main(String[] args) throws IOException {
         System.out.println(migratoryBirds(Arrays.asList(1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4)));
+        System.out.println(migratoryBirds(Arrays.asList(1,4,4,4,5,3)));
     }
 }
