@@ -12,3 +12,6 @@
 
 - [Forming a Magic Square](https://www.hackerrank.com/challenges/magic-square-forming/problem?isFullScreen=true)
   [Answer](src/algorithms/implementation/FormingAMagicSquare.java)
+  
+- [Forming a Magic Square](https://www.hackerrank.com/challenges/non-divisible-subset/problem?h_r=next-challenge&h_v=zen&isFullScreen=false)
+  [Answer](src/algorithms/implementation/NonDivisibleSubset.java)
