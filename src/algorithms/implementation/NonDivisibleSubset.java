@@ -10,9 +10,7 @@ public class NonDivisibleSubset {
         int[] subset = new int[k];
         int result = 0;
 
-
         s.forEach(integer -> subset [integer % k]++);
-
 
         if (k % 2 == 0) result++;
 
@@ -21,7 +19,6 @@ public class NonDivisibleSubset {
         for (int j = 1; j <= k / 2; j++)
             if (j != k - j)
                 result += Math.max(subset[j], subset[k - j]);
-
 
         return result;
     }
