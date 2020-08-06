@@ -3,17 +3,16 @@ package algorithms.string;
 public class SuperReducedString {
     static String superReducedString(String s) {
 
-        String ss = null;
+        String result = s;
 
-        for (int i = 0; i < s.length()-1; i++) {
-            for (int j = 1; j < s.length(); j++) {
-                if (s.charAt(i) != s.charAt(j)) ss = String.format("%s%s",ss,s.charAt(i));
-                j++;
-            }
-
+        for (int i = 1; i < result.length(); i++) {
+                if (result.charAt(i) == result.charAt(i-1)) {
+                    result = result.substring(0,i-1) + result.substring(i+1);
+                    i=0;
+                }
         }
 
-        return ss == null ? "Empty String" : ss.substring(4);
+        return result.length() == 0 ? "Empty String" : result;
     }
 
     public static void main(String[] args) {
