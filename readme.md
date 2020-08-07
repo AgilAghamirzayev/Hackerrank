@@ -16,5 +16,8 @@
 - [Forming a Magic Square](https://www.hackerrank.com/challenges/non-divisible-subset/problem?h_r=next-challenge&h_v=zen&isFullScreen=false)
   [Answer](src/algorithms/implementation/NonDivisibleSubset.java)
   
-- [Forming a Magic Square](https://www.hackerrank.com/challenges/reduced-string/problem?isFullScreen=true)
-  [Answer](src/algorithms/string/SuperReducedString.java)
+- [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string/problem?isFullScreen=true)
+  [Answer](src/algorithms/string/SuperReducedString.java)  
+  
+- [Two Characters](https://www.hackerrank.com/challenges/two-characters/problem?isFullScreen=true)
+  [Answer](src/algorithms/string/TwoCharacters.java)
